@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "811013951727",
+    "firebase_url": "https://local-bus-finder-1eb0b.firebaseio.com",
+    "project_id": "local-bus-finder-1eb0b",
+    "storage_bucket": "local-bus-finder-1eb0b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811013951727:android:a0facddcc326fca52f4b1a",
+        "android_client_info": {
+          "package_name": "com.example.localbusfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811013951727-u3tscu6gbu5klvccp63lpt29h85eebpm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzHi2OfxXuHy3LukiaY_jrAj6MDE3f1og"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811013951727-u3tscu6gbu5klvccp63lpt29h85eebpm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -6,18 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class all_bus extends AppCompatActivity {
+public class showbus extends AppCompatActivity {
     private Button bu2,bu3;
     private TextView t1,t2,t3,v1,v2,v3,f1,d1;
     private View p1,p2;
+    private LinearLayout l2,l3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_all_bus);
+        setContentView(R.layout.activity_showbus);
         t1=findViewById(R.id.b1);
         t2=findViewById(R.id.b2);
         t3=findViewById(R.id.b3);
@@ -31,14 +32,15 @@ public class all_bus extends AppCompatActivity {
         v1=findViewById(R.id.vara);
         v2=findViewById(R.id.vara2);
         v3=findViewById(R.id.vara3);
-       // v=findViewById(R.id.vara);
+        l2=findViewById(R.id.l5);
+        l3=findViewById(R.id.l6);
+        // v=findViewById(R.id.vara);
         showdata();
-
-
-
     }
+
+
     public void Route(View view) {
-       findRoute();
+        findRoute();
 
 
     }
@@ -76,16 +78,13 @@ public class all_bus extends AppCompatActivity {
         String g= intent.getStringExtra("va");
 
         t1.setText(a);
-      v1.setText(g);
+        v1.setText(g);
         f1.setText(c);
         d1.setText(d);
         if(b==null)
         {
-            t2.setVisibility(View.GONE);
-            bu2.setVisibility(View.GONE);
-            p1.setVisibility(View.GONE);
-            p2.setVisibility(View.GONE);
-          v2.setVisibility(View.GONE);
+            l2.setVisibility(View.GONE);
+
         }
         else
         {
@@ -95,10 +94,8 @@ public class all_bus extends AppCompatActivity {
 
         if(z==null)
         {
-            t3.setVisibility(View.GONE);
-            bu3.setVisibility(View.GONE);
-            p1.setVisibility(View.GONE);
-            v3.setVisibility(View.GONE);
+            l3.setVisibility(View.GONE);
+
         }
         else
         {
@@ -110,6 +107,16 @@ public class all_bus extends AppCompatActivity {
     }
 
     //initialize button
+
+
+
+
+
+
+
+
+
+
 
 
 }

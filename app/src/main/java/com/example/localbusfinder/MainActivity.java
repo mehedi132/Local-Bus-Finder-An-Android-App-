@@ -49,10 +49,10 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent= new Intent(MainActivity.this, search.class);
+                Intent intent= new Intent(MainActivity.this, login.class);
               Pair[] pairs= new Pair[2];
               pairs[0]= new Pair<View,String>(gif,"logo_image");
-              pairs[1]= new Pair<View,String>(gif,"logo_text");
+              pairs[1]= new Pair<View,String>(title1,"logo_text");
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
                     ActivityOptions option=  ActivityOptions.makeSceneTransitionAnimation(MainActivity.this,pairs);
                     startActivity(intent,option.toBundle());
